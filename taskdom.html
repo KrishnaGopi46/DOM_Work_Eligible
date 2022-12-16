@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>task dom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+	<input type="text" value="" placeholder="Your Age" id="age">
+	<input type="text" value="" placeholder="Your Sex" id="sex">
+	<button type="button" id="btn">click</button>
+	<h1 id="out"></h1>
+	
+<script>
+
+	let but=document.getElementById("btn");
+	btn.addEventListener("click",myFunction);
+	
+	function myFunction(){
+		var inpage=document.getElementById("age").value;
+		var inpsex=document.getElementById("sex").value;
+		
+		if(inpsex=="f"){
+			document.getElementById("out").innerHTML=("Work only urban areas");
+		}
+		else if(inpsex=="m" && inpage>=20 && inpage<=40){
+			document.getElementById("out").innerHTML=("Work any areas");
+		}
+		else if(inpsex=="m" && inpage>40 && inpage<=60){
+			document.getElementById("out").innerHTML=("Work only urban areas only");
+		}
+		else{
+			document.getElementById("out").innerHTML=("undefined");
+		}
+	}
+	
+
+	
+</script>
+
+
+</body>
+</html>
